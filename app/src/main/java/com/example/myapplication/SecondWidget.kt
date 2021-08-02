@@ -3,6 +3,9 @@ package com.example.myapplication
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.widget.ArrayAdapter
 import android.widget.RemoteViews
 
 /**
@@ -34,11 +37,28 @@ internal fun updateAppWidget2(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    val widgetText = context.getString(R.string.appwidget_text)
-    // Construct the RemoteViews object
     val views = RemoteViews(context.packageName, R.layout.second_widget)
-    views.setTextViewText(R.id.appwidget_text, widgetText)
 
-    // Instruct the widget manager to update the widget
+
+
+
+//    val adapter: ArrayAdapter<Int> = ArrayAdapter(
+//        context,
+//        R.layout.listview_item,
+//        R.id.ivPreview,
+//        data
+//    )
+
+
+    val intent = Intent(context, GridWidgetService::class.java)
+    intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
+    intent.data = Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME))
+
+    views.setRemoteAdapter(R.id.gvArtists, intent)
+
+//    views.setRemoteAdapter(R.id.gvArtists, adapter)
+
+
+
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }

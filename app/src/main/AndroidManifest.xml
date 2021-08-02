@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <service
+            android:name=".GridWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <receiver
             android:name=".SecondWidget"
             android:exported="true">

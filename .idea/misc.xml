@@ -8,9 +8,11 @@
         <entry key="app/src/main/res/drawable/first_gradient.xml" value="0.40520833333333334" />
         <entry key="app/src/main/res/drawable/footer_bg.xml" value="0.3234375" />
         <entry key="app/src/main/res/drawable/header_bg.xml" value="0.3234375" />
+        <entry key="app/src/main/res/drawable/second_gradient.xml" value="0.40520833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/layout/join_chat_widget.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/second_widget.xml" value="0.3496376811594203" />
+        <entry key="app/src/main/res/layout/listview_item.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/second_widget.xml" value="0.375" />
       </map>
     </option>
   </component>
