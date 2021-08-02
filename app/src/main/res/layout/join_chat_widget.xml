@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.MyApplication.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:theme="@style/Theme.MyApplication.AppWidgetContainer">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/group_avatar" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginRight="-8dp"
+            android:layout_marginBottom="-8dp"
+            android:src="@drawable/sound" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Megabox"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginTop="-4dp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Game_chat_1"
+            android:textColor="#73767D"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/hashtag" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="24dp"
+            android:paddingTop="8dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="8dp"
+            android:text="Join Voice"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@+id/rlHeader"
+        android:background="@drawable/footer_bg"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="18dp">
+
+        <ImageView
+            android:id="@+id/ivp1"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/p1" />
+
+        <ImageView
+            android:id="@+id/ivp2"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/p2" />
+
+        <ImageView
+            android:id="@+id/ivp3"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/p3" />
+
+        <ImageView
+            android:id="@+id/ivp4"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/p4" />
+
+        <ImageView
+            android:id="@+id/ivp5"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/p5" />
+    </LinearLayout>
+
+</RelativeLayout>
